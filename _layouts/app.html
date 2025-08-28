@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0">{{ page.title }}</h2>
+    <span class="badge">{{ page.version | default: "unversioned" }}</span>
+  </div>
+  {% if page.summary %}<p class="muted">{{ page.summary }}</p>{% endif %}
+
+  {% if page.hero_svg %}
+    <img class="diagram" src="{{ page.hero_svg }}" alt="Architecture diagram for {{ page.title }}">
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.assets %}
+  <h3>Downloads</h3>
+  <ul>
+    {% for a in page.assets %}
+      <li><a href="{{ a.url }}">{{ a.label }}</a> <span class="meta">({{ a.note }})</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.history %}
+  <h3>Versions</h3>
+  <ul>
+    {% for h in page.history %}
+      <li><a href="{{ h.url }}">{{ h.version }}</a> <span class="meta">— {{ h.date }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
