@@ -1,0 +1,384 @@
+<!-- ==== PART 1: START (keep at very top) ==== -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1220" viewBox="0 0 1800 1220">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0A0F1A"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0.8" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 L3,6 z" fill="#6B7280"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#111827" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="1220" fill="url(#bgGrad)"/>
+  <rect width="1800" height="1220" fill="url(#grid)" opacity="0.25"/>
+
+  <!-- Title -->
+  <text x="900" y="42" text-anchor="middle" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="900">
+    Bilingual + Voice GST Invoicing — Architecture
+  </text>
+  <text x="900" y="68" text-anchor="middle" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="14">
+    Enterprise-ready layout • AWS stack • Premium UI/UX standards
+  </text>
+<!-- ==== PART 1: END ==== -->
+
+<!-- ==== PART 2: START (paste directly after Part 1) ==== -->
+  <!-- Clients -->
+  <g>
+    <rect x="40" y="84" width="1720" height="128" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="42" y="124" width="1716" height="84" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="58" y="112" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Clients</text>
+    <text x="1738" y="112" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">Flutter • React + Next.js</text>
+  </g>
+
+  <!-- Edge & Identity -->
+  <g>
+    <rect x="40" y="232" width="1720" height="164" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="42" y="272" width="1716" height="120" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="58" y="260" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Edge &amp; Identity</text>
+    <text x="1738" y="260" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">CloudFront + WAF • API Gateway • Cognito</text>
+  </g>
+
+  <!-- App Services -->
+  <g>
+    <rect x="40" y="412" width="1180" height="324" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="42" y="452" width="1176" height="280" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="58" y="440" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">App Services (Spring Boot)</text>
+    <text x="1196" y="440" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">Invoice • Master • GST • Filing • Docs • Notifications</text>
+  </g>
+
+  <!-- AI & Language -->
+  <g>
+    <rect x="1240" y="412" width="520" height="324" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="1242" y="452" width="516" height="280" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="1258" y="440" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">AI &amp; Language (Premium)</text>
+    <text x="1738" y="440" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">ASR • NLU • Translate</text>
+  </g>
+
+  <!-- Data Plane -->
+  <g>
+    <rect x="40" y="756" width="1720" height="240" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="42" y="796" width="1716" height="196" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="58" y="784" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Data Plane</text>
+    <text x="1738" y="784" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">RDS • S3 • Redis • SQS • KMS/Secrets • Observability</text>
+  </g>
+
+  <!-- External -->
+  <g>
+    <rect x="40" y="1016" width="1720" height="164" rx="20" ry="20" fill="#0B1220" stroke="#1F2A44" stroke-width="1.5" opacity="0.98"/>
+    <rect x="42" y="1056" width="1716" height="120" rx="16" ry="16" fill="#0F172A" stroke="#1E293B" stroke-width="1" filter="url(#panelShadow)"/>
+    <text x="58" y="1044" fill="#E5F0FF" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">External Systems &amp; Channels</text>
+    <text x="1738" y="1044" text-anchor="end" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12">GSTN • IRP • Email • SMS • Accounting</text>
+  </g>
+<!-- ==== PART 2: END ==== -->
+
+<!-- ==== PART 3: START (paste after Part 2) ==== -->
+  <!-- Clients -->
+  <g id="mobile">
+    <rect x="120" y="120" width="360" height="84" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="120" y="120" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="130" y="134" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="166" y="149" text-anchor="middle" fill="#A5B4FC" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">MOBILE</text>
+    <text x="132" y="172" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Mobile App</text>
+    <text x="132" y="190" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Flutter or React Native</text>
+    <text x="132" y="208" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Offline drafts, share, preview</text>
+  </g>
+
+  <g id="web">
+    <rect x="1320" y="120" width="360" height="84" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1320" y="120" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="1330" y="134" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1366" y="149" text-anchor="middle" fill="#A5B4FC" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">WEB</text>
+    <text x="1332" y="172" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Web Console</text>
+    <text x="1332" y="190" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Next.js (React)</text>
+    <text x="1332" y="208" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Admin, GST dashboard</text>
+  </g>
+
+  <!-- Edge & Identity Nodes -->
+  <g id="cfwaf">
+    <rect x="100" y="268" width="340" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="100" y="268" width="340" height="8" rx="14" ry="14" fill="#7C3AED"/>
+    <rect x="110" y="282" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="146" y="297" text-anchor="middle" fill="#F59E0B" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">AWS</text>
+    <text x="112" y="320" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">CloudFront + WAF</text>
+    <text x="112" y="338" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">CDN, TLS, caching</text>
+    <text x="112" y="356" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Basic protection</text>
+  </g>
+
+  <g id="apigw">
+    <rect x="520" y="268" width="340" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="520" y="268" width="340" height="8" rx="14" ry="14" fill="#7C3AED"/>
+    <rect x="530" y="282" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="566" y="297" text-anchor="middle" fill="#FB923C" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">APIGW</text>
+    <text x="532" y="320" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">API Gateway</text>
+    <text x="532" y="338" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Routing, throttling, REST</text>
+  </g>
+
+  <g id="cognito">
+    <rect x="940" y="268" width="340" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="940" y="268" width="340" height="8" rx="14" ry="14" fill="#7C3AED"/>
+    <rect x="950" y="282" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="986" y="297" text-anchor="middle" fill="#10B981" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">AUTH</text>
+    <text x="952" y="320" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Cognito</text>
+    <text x="952" y="338" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Users, orgs, roles, OTP/MFA</text>
+  </g>
+<!-- ==== PART 3: END ==== -->
+
+<!-- ==== PART 4: START (paste after Part 3) ==== -->
+  <!-- App Services -->
+  <g id="svc-invoice">
+    <rect x="80" y="448" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="80" y="448" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="90" y="462" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="126" y="477" text-anchor="middle" fill="#6DB33F" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Spring</text>
+    <text x="92" y="500" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Invoice Service</text>
+    <text x="92" y="518" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">CRUD, totals</text>
+    <text x="92" y="536" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Bilingual fields, versioning</text>
+  </g>
+
+  <g id="svc-master">
+    <rect x="460" y="448" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="460" y="448" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="470" y="462" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="506" y="477" text-anchor="middle" fill="#6DB33F" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Spring</text>
+    <text x="472" y="500" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Master Data</text>
+    <text x="472" y="518" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Customers, Items</text>
+    <text x="472" y="536" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">HSN/SAC, taxes</text>
+  </g>
+
+  <g id="svc-gst">
+    <rect x="840" y="448" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="840" y="448" width="360" height="8" rx="14" ry="14" fill="#10B981"/>
+    <rect x="850" y="462" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="886" y="477" text-anchor="middle" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Java</text>
+    <text x="852" y="500" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">GST Engine (lib)</text>
+    <text x="852" y="518" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">CGST/SGST/IGST</text>
+    <text x="852" y="536" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Place-of-supply, rounding</text>
+  </g>
+
+  <g id="svc-file">
+    <rect x="80" y="596" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="80" y="596" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="90" y="610" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="126" y="625" text-anchor="middle" fill="#6DB33F" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Spring</text>
+    <text x="92" y="648" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Filing Export</text>
+    <text x="92" y="666" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">GSTR-1 CSV/JSON</text>
+    <text x="92" y="684" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">3B summary</text>
+  </g>
+
+  <g id="svc-docs">
+    <rect x="460" y="596" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="460" y="596" width="360" height="8" rx="14" ry="14" fill="#F59E0B"/>
+    <rect x="470" y="610" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="506" y="625" text-anchor="middle" fill="#A3E635" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Node</text>
+    <text x="472" y="648" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Document Service</text>
+    <text x="472" y="666" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">HTML→PDF &amp; PNG</text>
+    <text x="472" y="684" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Playwright/Chromium</text>
+  </g>
+
+  <g id="svc-notif">
+    <rect x="840" y="596" width="360" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="840" y="596" width="360" height="8" rx="14" ry="14" fill="#2563EB"/>
+    <rect x="850" y="610" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="886" y="625" text-anchor="middle" fill="#6DB33F" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Spring</text>
+    <text x="852" y="648" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Notification Service</text>
+    <text x="852" y="666" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Email (SES), SMS link</text>
+  </g>
+
+  <!-- AI & Language -->
+  <g id="ai-asr">
+    <rect x="1260" y="448" width="480" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1260" y="448" width="480" height="8" rx="14" ry="14" fill="#10B981"/>
+    <rect x="1270" y="462" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1306" y="477" text-anchor="middle" fill="#22D3EE" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">ASR</text>
+    <text x="1272" y="500" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Speech-to-Text</text>
+    <text x="1272" y="518" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Google STT or AWS Transcribe</text>
+  </g>
+
+  <g id="ai-nlu">
+    <rect x="1260" y="596" width="480" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1260" y="596" width="480" height="8" rx="14" ry="14" fill="#10B981"/>
+    <rect x="1270" y="610" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1306" y="625" text-anchor="middle" fill="#FDE047" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">NLU</text>
+    <text x="1272" y="648" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Command Parser</text>
+    <text x="1272" y="666" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Rule-based + LLM assist</text>
+    <text x="1272" y="684" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Slots → invoice fields</text>
+  </g>
+
+  <g id="ai-mt">
+    <rect x="1710" y="448" width="30" height="272" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1710" y="448" width="30" height="8" rx="14" ry="14" fill="#10B981"/>
+    <rect x="1714" y="462" width="22" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1725" y="478" text-anchor="middle" fill="#60A5FA" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700">MT</text>
+    <text x="1725" y="510" text-anchor="middle" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="12">Translate</text>
+    <text x="1725" y="528" text-anchor="middle" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="11">Google + glossary</text>
+  </g>
+
+  <!-- Curved connectors between Edge -> Services, Clients -> Edge, and AI <-> Invoice will be in Part 5 -->
+<!-- ==== PART 4: END ==== -->
+
+<!-- ==== PART 5: START (paste after Part 4) ==== -->
+  <!-- Data Plane -->
+  <g id="data-rds">
+    <rect x="80" y="792" width="340" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="80" y="792" width="340" height="8" rx="14" ry="14" fill="#0EA5E9"/>
+    <rect x="90" y="806" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="126" y="821" text-anchor="middle" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">RDS</text>
+    <text x="92" y="844" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Postgres (RDS)</text>
+    <text x="92" y="862" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Operational DB</text>
+    <text x="92" y="880" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Multi-tenant</text>
+  </g>
+
+  <g id="data-s3">
+    <rect x="460" y="792" width="340" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="460" y="792" width="340" height="8" rx="14" ry="14" fill="#0EA5E9"/>
+    <rect x="470" y="806" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="506" y="821" text-anchor="middle" fill="#22D3EE" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">S3</text>
+    <text x="472" y="844" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">S3 (Artifacts)</text>
+    <text x="472" y="862" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">PDF/PNG, IRN JSON</text>
+    <text x="472" y="880" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Signed URLs</text>
+  </g>
+
+  <g id="data-redis">
+    <rect x="840" y="792" width="340" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="840" y="792" width="340" height="8" rx="14" ry="14" fill="#0EA5E9"/>
+    <rect x="850" y="806" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="886" y="821" text-anchor="middle" fill="#F87171" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Redis</text>
+    <text x="852" y="844" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Redis (Cache)</text>
+    <text x="852" y="862" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">ElastiCache lookups</text>
+    <text x="852" y="880" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Sessions optional</text>
+  </g>
+
+  <g id="data-sqs">
+    <rect x="1220" y="792" width="340" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1220" y="792" width="340" height="8" rx="14" ry="14" fill="#0EA5E9"/>
+    <rect x="1230" y="806" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1266" y="821" text-anchor="middle" fill="#F59E0B" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">SQS</text>
+    <text x="1232" y="844" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">SQS (Queue)</text>
+    <text x="1232" y="862" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Render + filing jobs</text>
+  </g>
+
+  <g id="data-kms">
+    <rect x="1600" y="792" width="140" height="124" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1600" y="792" width="140" height="8" rx="14" ry="14" fill="#0EA5E9"/>
+    <rect x="1610" y="806" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1646" y="821" text-anchor="middle" fill="#A78BFA" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">KMS</text>
+    <text x="1612" y="844" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">KMS/Secrets</text>
+    <text x="1612" y="862" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Keys, tokens, PII vault</text>
+  </g>
+
+  <g id="data-obs">
+    <rect x="80" y="936" width="720" height="60" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="80" y="936" width="720" height="8" rx="14" ry="14" fill="#93C5FD"/>
+    <rect x="90" y="950" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="126" y="965" text-anchor="middle" fill="#E5E7EB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">OBS</text>
+    <text x="92" y="988" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Observability</text>
+    <text x="260" y="988" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">CloudWatch + OpenTelemetry</text>
+  </g>
+
+  <!-- External -->
+  <g id="ext-gstn">
+    <rect x="80" y="1052" width="360" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="80" y="1052" width="360" height="8" rx="14" ry="14" fill="#9CA3AF"/>
+    <rect x="90" y="1066" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="126" y="1081" text-anchor="middle" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">GSTN</text>
+    <text x="92" y="1104" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">GSTN Portal</text>
+    <text x="92" y="1122" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Returns upload/API integration</text>
+  </g>
+
+  <g id="ext-irp">
+    <rect x="460" y="1052" width="360" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="460" y="1052" width="360" height="8" rx="14" ry="14" fill="#9CA3AF"/>
+    <rect x="470" y="1066" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="506" y="1081" text-anchor="middle" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">NIC</text>
+    <text x="472" y="1104" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">IRP / E-Way Bill</text>
+    <text x="472" y="1122" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">NIC IRN &amp; E-Way APIs</text>
+  </g>
+
+  <g id="ext-ses">
+    <rect x="840" y="1052" width="360" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="840" y="1052" width="360" height="8" rx="14" ry="14" fill="#9CA3AF"/>
+    <rect x="850" y="1066" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="886" y="1081" text-anchor="middle" fill="#EAB308" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">SES</text>
+    <text x="852" y="1104" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Email</text>
+    <text x="852" y="1122" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Amazon SES</text>
+  </g>
+
+  <g id="ext-sms">
+    <rect x="1220" y="1052" width="360" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1220" y="1052" width="360" height="8" rx="14" ry="14" fill="#9CA3AF"/>
+    <rect x="1230" y="1066" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1266" y="1081" text-anchor="middle" fill="#E5E7EB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">SMS</text>
+    <text x="1232" y="1104" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">SMS Provider</text>
+    <text x="1232" y="1122" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">via SNS/Twilio/Exotel</text>
+  </g>
+
+  <g id="ext-acc">
+    <rect x="1600" y="1052" width="140" height="112" rx="14" ry="14" fill="#0B1220" stroke="#243146" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect x="1600" y="1052" width="140" height="8" rx="14" ry="14" fill="#9CA3AF"/>
+    <rect x="1608" y="1066" width="72" height="22" rx="11" ry="11" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1644" y="1081" text-anchor="middle" fill="#E5E7EB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Export</text>
+    <text x="1612" y="1104" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="16">Accounting</text>
+    <text x="1612" y="1122" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="13">Tally/Zoho export</text>
+  </g>
+
+  <!-- ===== Arrows / Connections ===== -->
+  <!-- Clients -> CloudFront -->
+  <path d="M300 204 C 520 204, 520 268, 270 268" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1500 204 C 980 204, 980 268, 270 268" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Edge chain: CF -> APIGW -> Cognito -->
+  <path d="M270 380 C 440 380, 690 324, 690 324" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 860 380, 1110 324, 1110 324" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- APIGW -> App services (fan out) -->
+  <path d="M690 380 C 690 420, 260 462, 260 462" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 740 420, 640 462, 640 462" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 820 420, 1020 462, 1020 462" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 690 520, 260 610, 260 610" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 740 520, 640 610, 640 610" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M690 380 C 820 520, 1020 610, 1020 610" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Services -> Data -->
+  <path d="M260 572 C 260 712, 250 792, 250 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>   <!-- invoice -> RDS -->
+  <path d="M640 572 C 640 712, 250 792, 250 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>   <!-- master -> RDS -->
+  <path d="M1020 572 C 1020 712, 250 792, 250 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>  <!-- gst -> RDS -->
+  <path d="M260 720 C 260 812, 250 792, 250 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>    <!-- filing -> RDS -->
+  <path d="M640 720 C 640 812, 630 792, 630 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>    <!-- docs -> S3 -->
+  <path d="M1020 720 C 1020 992, 1020 1052, 1020 1052" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/> <!-- notif -> SES -->
+  <path d="M1020 720 C 1120 992, 1400 1052, 1400 1052" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/> <!-- notif -> SMS -->
+
+  <!-- Queue path for rendering: invoice -> SQS -> doc service -->
+  <path d="M260 572 C 1220 690, 1390 792, 1390 792" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1390 916 C 1040 740, 640 720, 640 720" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- AI path: Mobile -> ASR -> NLU -> Invoice; Invoice -> MT -->
+  <path d="M300 204 C 1250 280, 1500 448, 1500 448" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>   <!-- audio -->
+  <path d="M1500 572 C 1500 590, 1500 596, 1500 596" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>   <!-- transcript -->
+  <path d="M1500 720 C 980 600, 260 448, 260 448" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>     <!-- slots -> invoice -->
+  <path d="M260 572 C 1710 520, 1710 448, 1710 448" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>   <!-- translate -->
+
+  <!-- Filing -> External -->
+  <path d="M260 720 C 260 980, 260 1052, 260 1052" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M260 720 C 540 980, 640 1052, 640 1052" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Observability taps -->
+  <path d="M850 324 C 850 920, 440 966, 440 966" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1020 658 C 1020 940, 440 966, 440 966" stroke="#6B7280" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Footer -->
+  <text x="900" y="1204" text-anchor="middle" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="12">
+    Design system: brand blue #2563EB · accent teal #0EA5E9 · surface #0B1220 · Inter font
+  </text>
+</svg>
+<!-- ==== PART 5: END (also closes </svg>) ==== -->
