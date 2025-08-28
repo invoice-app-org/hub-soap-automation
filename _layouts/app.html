@@ -18,7 +18,7 @@ layout: default
   <h3>Downloads</h3>
   <ul>
     {% for a in page.assets %}
-      <li><a href="{{ a.url }}">{{ a.label }}</a> <span class="meta">({{ a.note }})</span></li>
+      <li><a href="{{ a.url | relative_url }}">{{ a.label }}</a> <span class="meta">({{ a.note }})</span></li>
     {% endfor %}
   </ul>
   {% endif %}
