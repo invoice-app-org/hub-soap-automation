@@ -9,7 +9,7 @@ layout: default
   {% if page.summary %}<p class="muted">{{ page.summary }}</p>{% endif %}
 
   {% if page.hero_svg %}
-    <img class="diagram" src="{{ page.hero_svg }}" alt="Architecture diagram for {{ page.title }}">
+    <img class="diagram" src="{{ page.hero_svg | relative_url }}" alt="Architecture diagram for {{ page.title }}">
   {% endif %}
 
   {{ content }}
@@ -27,7 +27,7 @@ layout: default
   <h3>Versions</h3>
   <ul>
     {% for h in page.history %}
-      <li><a href="{{ h.url }}">{{ h.version }}</a> <span class="meta">— {{ h.date }}</span></li>
+      <li><a href="{{ h.url | relative_url }}">{{ h.version }}</a> <span class="meta">— {{ h.date }}</span></li>
     {% endfor %}
   </ul>
   {% endif %}

@@ -1,6 +1,6 @@
 title: SoaP Hub
 description: Architecture one-pagers for our products
-baseurl: /soap-hub 
+baseurl: /soap-hub
 theme: null
 markdown: kramdown
 permalink: pretty
